@@ -3,13 +3,18 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="utf-8">
+
     <title>1852 meters</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
     <meta property="og:title" content="One Nautical Mile">
     <meta property="og:type" content="article">
     <meta property="og:url" content="http://1852m.ru">
     <meta property="og:site_name" content="One Nautical Mile">
 
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="theme-color" content="#77ADAE" />
+
     <style>
       html, body {
         height: 100%;
@@ -42,6 +47,7 @@
         min-width: 100%;
         min-height: 100%;
         z-index: -100;
+        background: #77ADAE;
       }
 
       .background video {
@@ -59,9 +65,22 @@
         height: auto;
       }
 
+      .static-background {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        background-image: url("assets/background.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+
       .main-wrapper {
         display: flex;
-        height: 100%;
+        min-height: 100%;
+        flex-grow: 1;
         flex-direction: column;
       }
 
@@ -116,6 +135,7 @@
       </div>
     </div>
     <div class="background">
+      <div class="static-background"></div>
       <video loop muted autoplay preload="auto">
         <source src="assets/sea.mp4" type="video/mp4">
       </video>
