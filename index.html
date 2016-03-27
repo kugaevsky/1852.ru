@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <title>1852 meters</title>
+    <meta property="og:title" content="One Nautical Mile">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://1852m.ru">
+    <meta property="og:site_name" content="One Nautical Mile">
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font: normal normal normal 16px/1.7 Helvetica,Arial,sans-serif;
+        color: #534745;
+      }
+
+      h1 {
+        margin: .5em 0 1em;
+        font-weight: 200;
+        color: #534745;
+        letter-spacing: 3px
+      }
+
+      p {
+        font-weight: 200;
+        font-size: .9em;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -100;
+      }
+
+      .background video {
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+
+      .main-wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content, .footer {
+        max-width: 320px;
+        padding: 0 1.5em;
+        text-align: center;
+        color: white
+      }
+
+      .footer {
+        padding: .5em 1.5em;
+        font-weight: 200;
+        font-size: .7em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="content-wrapper">
+        <div class="content">
+          <img src="assets/compass.png" alt="Compass" />
+          <br />
+          <h1>1852 meters</h1>
+          <p>
+            <em>"If you want to build a ship, don't drum up people to collect wood and don't assign them tasks and work, but rather teach them to long for the endless immensity of the sea."</em>
+            <br />
+            <br />
+            ANTOINE DE SAINT-EXUPERY
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-wrapper">
+        <div class="footer">
+          © 2016 Russian Naval Force
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <video loop muted autoplay preload="auto">
+        <source src="assets/sea.mp4" type="video/mp4">
+      </video>
+    </div>
+  </body>
+</html>
