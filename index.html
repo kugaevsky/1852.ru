@@ -5,13 +5,18 @@
     <meta charset="utf-8">
 
     <title>1852 meters</title>
+    <meta name="description" content="One Nautical Mile">
 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-    <meta property="og:title" content="One Nautical Mile">
+    <meta property="og:title" content="1852 meters">
     <meta property="og:type" content="article">
     <meta property="og:url" content="http://1852m.ru">
-    <meta property="og:site_name" content="One Nautical Mile">
+    <meta property="og:site_name" content="1852 meters">
+    <meta property="og:description" content="One Nautical Mile">
+    <meta property="og:image" content="http://1852m.ru/assets/compass.png">
+
+    <link rel="image_src" href="http://1852m.ru/assets/compass.png">
 
     <meta name="theme-color" content="#77ADAE" />
 
@@ -113,6 +118,13 @@
   </head>
 
   <body>
+    <div class="background">
+      <div class="static-background"></div>
+      <video loop muted autoplay preload="auto" poster="assets/compass.png">
+        <source src="assets/sea.webm" type="video/webm">
+        <source src="assets/sea.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="main-wrapper">
       <div class="content-wrapper">
         <div class="content">
@@ -133,13 +145,6 @@
           © 2016 Russian Naval Force
         </div>
       </div>
-    </div>
-    <div class="background">
-      <div class="static-background"></div>
-      <video loop muted autoplay preload="auto">
-        <source src="assets/sea.mp4" type="video/mp4">
-        <source src="assets/sea.webm" type="video/webm">
-      </video>
     </div>
   </body>
 </html>
